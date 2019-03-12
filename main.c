@@ -8,5 +8,8 @@
 #include <stdio.h>
 
 int main() {
+	printf("Starting a backup\n");
+
+	performBackup();
 	return 0;
 }

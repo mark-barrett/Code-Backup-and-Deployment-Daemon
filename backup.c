@@ -96,23 +96,44 @@ int performBackup() {
 		exit(EXIT_FAILURE);
 	} else {
 		printf("Created today's backup folder.\n");
+		
+		// Copy commands
+		// Doing this so that we can change file permissions on the seperate paths later
+		char intranet_command[500] = "cp -a ";
+		char live_command[500] = "cp -a ";
 
 		// Now lets copy the intranet and the live folders to the backup folder
-		char intranet_path[400] = "cp -a /var/www/html/intranet/. ";
-		char live_path[400] = "cp -a /var/www/html/live/. ";
+		// Copy command for the front
+		strcat(intranet_command, "/var/www/html/intranet/. ");
+		strcat(live_command, "/var/www/html/live/. ");
 
 		// Concat the start of the intranet and live path with the path of the
 		// backup folder destination
-		strcat(intranet_path, backup_folder_path);
-		strcat(live_path, backup_folder_path);
+		strcat(intranet_command, backup_folder_path);
+		strcat(live_command, backup_folder_path);
+		
+		char backedup_intranet_path[300];
+		char backedup_live_path[300];
 
+		// Copy the path into it
+		strcpy(backedup_intranet_path, backup_folder_path);
+	       	strcpy(backedup_live_path, backup_folder_path);	
+		
 		// Need to concat each individual folder now
-		strcat(intranet_path, "/intranet");
-		strcat(live_path, "/live");
+		strcat(intranet_command, "/intranet");
+		strcat(live_command, "/live");
 
 		// Now execute both
-		system(intranet_path);
-		system(live_path);
+		system(intranet_command);
+		system(live_command);
+		
+		// Change the permissions for these files so they can be viewed
+		if(lockFiles(strcat(backedup_intranet_path, "/intranet"), "0444") == 0 && lockFiles(strcat(backedup_live_path, "/live"), "0444") == 0) {
+			printf("Backup file permissions changed so they can read.\n");
+		} else {
+			printf("Unable to change permissions of backed up files.\n");
+			exit(EXIT_FAILURE);
+		}
 	}
 
 	// Unlock the files, give them like 0444 mode

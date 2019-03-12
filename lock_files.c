@@ -19,7 +19,7 @@ int lockFiles(char folder[], char mode[]) {
 		// Lock the files
 		int i = strtol(mode, 0, 8);
 		if(chmod(folder, i) < 0) {
-			printf("Unable to lock folder for backup\n");
+			printf("Unable to lock folder for backup. Try running with sudo.\n");
 			exit(EXIT_FAILURE);
 		} else {
 			return 0;

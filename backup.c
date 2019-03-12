@@ -3,15 +3,15 @@
  * Date: 10/09/2019
  * Git Repo: https://github.com/mark-barrett/Code-Backup-and-Deployment-Daemon
  */
+#include <time.h>
 #include <stdio.h>
+#include <errno.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <dirent.h>
+#include <string.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-#include <unistd.h>
-#include <time.h>
-#include <dirent.h>
-#include <errno.h>
-#include <stdlib.h>
-#include <string.h>
 #include "lock_files.h"
 
 int performBackup() {
@@ -23,7 +23,7 @@ int performBackup() {
 		printf("Cannot get to root, try running with sudo\n");
 		exit(EXIT_FAILURE);
 	}
-
+	
 	// To perform the backup lets check to see if the backups folder exists.
 	// Use dirent for this
 	DIR* dir = opendir("/var/lib/backup-daemon/backups");
@@ -45,7 +45,7 @@ int performBackup() {
 			}
 		}
 	} else {
-		printf("Cant open the backup directory\n");
+		printf("Cant open the backup directory. Try running with sudo.\n");
 		exit(EXIT_FAILURE);
 	}
 

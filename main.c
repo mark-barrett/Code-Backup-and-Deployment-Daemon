@@ -7,10 +7,14 @@
  */
 #include <stdio.h>
 #include "backup.h"
+#include "logger.h"
 
 int main() {
 	printf("Starting a backup\n");
-
 	performBackup();
+
+	printf("Recording log\n");
+	recordLog("Hello World");
+	
 	return 0;
 }

@@ -6,6 +6,7 @@
  * Git Repo: https://github.com/mark-barrett/Code-Backup-and-Deployment-Daemon
  */
 #include <stdio.h>
+#include "backup.h"
 
 int main() {
 	printf("Starting a backup\n");

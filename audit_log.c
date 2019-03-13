@@ -26,7 +26,7 @@ int generateAuditLogs() {
 	// awk to clean things up a bit and then carry on parsing the resulting information.
 	// Can specify a time if needed in the future
 	FILE *fp;
-	fp = popen("ausearch -f /var/www/html/ | aureport -f | awk '/^[0-9]/ {printf \"%s %s %s %s %s\\n\", $2, $3, $4, $7, $8}' ", "r");
+	fp = popen("ausearch -f /var/www/html/ | aureport -f | awk '/^[0-9]/ {printf \"%s %s %s %s %s\\n\", $2, $3, $4, $7, $8}'", "r");
 	
 	// Define some variables that we want to get from each line
 	char date[8] = "";
@@ -34,22 +34,15 @@ int generateAuditLogs() {
 	char file[200] = "";
 	char exe[200] = "";
 	char auid[10] = "";
-	int line = 0;
 	int r = 0;
 
-	// Do an fscanf to get the ball rolling
-	r = fscanf(fp, "%s %s %s %s %s", date, time, file, exe, auid);
-
-	// While we are not at the end of the file
-	while(r != EOF) {
-		// Increment the line as we are iterating over each line
-		line++;
-		
-		// Do another fscanf
-		r = fscanf(fp, "%s %s %s %s %s", date, time, file, exe, auid);
+	// Do while we are not at the end of the file
+	while(fscanf(fp, "%s %s %s %s %s\n", date, time, file, exe, auid) != EOF){
 
 		// If we are past the first 3 lines then print
+		//printf("%s", date);
 		printf("%s %s %s %s %s\n", date, time, file, exe, auid);
+
 	}
 		
 	fclose(fp);

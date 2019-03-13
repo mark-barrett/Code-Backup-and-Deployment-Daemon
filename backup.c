@@ -12,8 +12,8 @@
 #include <string.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-#include "lock_files.h"
 #include "logger.h"
+#include "lock_files.h"
 
 int performBackup() {
 	// Firstly lets define the time for right now
@@ -65,7 +65,7 @@ int performBackup() {
 	// Get a string representation of the current time
 	char buff[20];
 
-	strftime(buff, 20, "%Y-%m-%d", localtime(&now));
+	strftime(buff, 20, "%Y-%m-%d-%H:%M:%S", localtime(&now));
 	
 	// Lets create a directory in the backups folder with todays timestamp
 	char backup_folder_path[200] = "/var/lib/backup-daemon/backups/";

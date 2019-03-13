@@ -8,13 +8,20 @@
 #include <stdio.h>
 #include "backup.h"
 #include "logger.h"
+#include "update.h"
 
 int main() {
-	printf("Starting a backup\n");
-	performBackup();
-
-	printf("Recording log\n");
-	recordLog("Hello World");
 	
+	// We know backup works so we can comment this out for the minute
+	// printf("Starting a backup\n");
+	// performBackup();
+
+	// We know logging works so we can comment this out for the minute
+	// printf("Recording log\n");
+	// recordLog("Hello World");
+	
+	// For updating
+	printf("Updating live site\n");
+	performUpdate();
 	return 0;
 }

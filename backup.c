@@ -13,6 +13,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include "lock_files.h"
+#include "logger.h"
 
 int performBackup() {
 	// Firstly lets define the time for right now
@@ -20,7 +21,7 @@ int performBackup() {
 	
 	// Move to the root directory so we can move freely
 	if(chdir("/") < 0) {
-		printf("Cannot get to root, try running with sudo\n");
+		recordLog("Backup: Can't get to root, try running with sudo.");
 		exit(EXIT_FAILURE);
 	}
 	
@@ -32,20 +33,22 @@ int performBackup() {
 	if(dir) {
 		printf("Found backup directory\n");
 	} else if(ENOENT == errno) {
-		printf("Backup directory not found, creating it.\n");
+		recordLog("Backup: No backup directory found, creating it.");
 
 		// Create the directory because it doesn't exist
 		// We want to only allow the user to read the backups not alter them.
 		if(mkdir("/var/lib/backup-daemon", 0777) == -1) {
-			printf("Error creating app folder in /var/lib.\n");
+			recordLog("Backup: Error creating app folder in /var/lib");
+			exit(EXIT_FAILURE);
 		} else {
 			// Create backups directory inside that
 			if(mkdir("/var/lib/backup-daemon/backups", 0777) == -1) {
-				printf("Error creating backups folder");
+				recordLog("Backup: Erorr creating backups folder in /var/lib/backup-daemon");
+				exit(EXIT_FAILURE);
 			}
 		}
 	} else {
-		printf("Cant open the backup directory. Try running with sudo.\n");
+		recordLog("Backup: Can't open backup directory, try running with sudo.");
 		exit(EXIT_FAILURE);
 	}
 
@@ -53,9 +56,9 @@ int performBackup() {
 	// OR we have created it.
 	// Now lets lock the directories.
 	if(lockFiles("/var/www/html/intranet", "0000") == 0 && lockFiles("/var/www/html/live", "0000") == 0) {
-		printf("Live and Intranet files locked\n");
+		recordLog("Backup: Locked files before performing backup.");
 	} else {
-		printf("Unable to lock Live and Intranet files. Aborting backup.\n");
+		recordLog("Backup: Can't lock files before performing backup, try running with sudo.");
 		exit(EXIT_FAILURE);
 	}
 	
@@ -69,9 +72,14 @@ int performBackup() {
 	
 	// Concatenate todays timestamp to the path for making the directory
 	strcat(backup_folder_path, buff);
-
-	printf("Creating Backup at:\n%s\n", backup_folder_path);
 	
+	char log_message_for_backup_with_path[250] = "Backup: Creating backup at: ";
+
+	// Copy it in
+	strcat(log_message_for_backup_with_path, backup_folder_path);
+
+	recordLog(log_message_for_backup_with_path);
+
 	// Check if the folder already exists	
 	DIR* backup_dir = opendir(backup_folder_path);
 
@@ -92,7 +100,7 @@ int performBackup() {
 	// If we have got here either the folder existed and we deleted it,
 	// or it doesn't exist so lets create it.
 	if(mkdir(backup_folder_path, 0777) == -1) {
-		printf("Can't create today's backup folder.\n");
+		recordLog("Backup: Can't create today's backup folder.");
 		exit(EXIT_FAILURE);
 	} else {
 		printf("Created today's backup folder.\n");
@@ -123,24 +131,28 @@ int performBackup() {
 		strcat(intranet_command, "/intranet");
 		strcat(live_command, "/live");
 
+		recordLog("Backup: Starting backup....");
+
 		// Now execute both
 		system(intranet_command);
 		system(live_command);
 		
+		recordLog("Backup: Backup complete :)");
+
 		// Change the permissions for these files so they can be viewed
 		if(lockFiles(strcat(backedup_intranet_path, "/intranet"), "0444") == 0 && lockFiles(strcat(backedup_live_path, "/live"), "0444") == 0) {
-			printf("Backup file permissions changed so they can read.\n");
+			recordLog("Backup: Backup files unlocked.");
 		} else {
-			printf("Unable to change permissions of backed up files.\n");
+			recordLog("Backup: Unable to change permissions of backed up files.");
 			exit(EXIT_FAILURE);
 		}
 	}
 
 	// Unlock the files, give them like 0444 mode
 	if(lockFiles("/var/www/html/intranet", "0444") == 0 && lockFiles("/var/www/html/live", "0444") == 0) {
-		printf("Live and Intranet files unlocked\n");
+		recordLog("Backup: Live and Intranet files unlocked");
 	} else {
-		printf("Unable to unlock Live and Intranet files. Abortinf backup.\n");
+		recordLog("Backup: Unable to unlock Live and Intranet files. Aborting backup.");
 		exit(EXIT_FAILURE);
 	}
 }

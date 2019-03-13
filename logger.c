@@ -17,20 +17,25 @@ int recordLog(char log[]) {
 	time_t now = time(NULL);
 
 	// The time as a string
-	char log_message[20+strlen(log)];
+	char log_message[100+strlen(log)];
 	
 	// Add it to the start of the log
 	strftime(log_message, 20+strlen(log), "[%Y-%m-%d %H:%M:%S::", localtime(&now));
 	
 	// Put the user into it
 	char *user = getenv("USER");
-	
-	// Add to the user to finish of the block
-	strcat(user, "] ");
-	
-	// Now add that to the log
-	strcat(log_message, user); 
 
+	char user_and_timestamp[50] = "";
+	
+	// Cat the user into it
+	strcat(user_and_timestamp, user);
+	
+	// Cat the user time stampt and "] "
+	strcat(user_and_timestamp, "] ");
+
+	// Now add that to the log
+	strcat(log_message, user_and_timestamp); 
+	
 	// Move to the root directory so we can move freely
 	if(chdir("/") < 0) {
 		printf("Cannot get to root, try running with sudo\n");
@@ -52,7 +57,8 @@ int recordLog(char log[]) {
 	
 	// If we arrived here we have one way or another created a log foler or
 	// it already exists.
-	// Open the file in write mode. If it doesn't exist this will be created.
+	// Open the file in a+ mode which is reading and appending
+	// so we don't overwrite the file each time theres a new log. If it doesn't exist this will be created.
 	FILE *log_file = fopen("/var/log/backup-daemon/main.log", "a+");
 	
 	// Concat the time and the log

@@ -1,6 +1,6 @@
 CC=gcc
-objects = main.o backup.o lock_files.o logger.o update.c
-headers = backup.h lock_files.h logger.h update.h
+objects = main.o backup.o lock_files.o logger.o update.c audit_log.c
+headers = backup.h lock_files.h logger.h update.h audit_log.h
 
 backupDaemon: $(objects)
 	     $(CC) -o backupDaemon $(objects) -lm
@@ -19,3 +19,6 @@ logger.o: logger.c
 
 update.o: update.c
 	$(CC) -c update.c
+
+audit_log.o: audit_log.c
+	$(CC) -c audit_log.c

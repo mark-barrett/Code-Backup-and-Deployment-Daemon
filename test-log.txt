@@ -1,0 +1,871 @@
+----
+time->Fri Mar  8 15:26:33 2019
+type=PROCTITLE msg=audit(1552058793.892:107): proctitle=2F6F70742F7375626C696D655F746578742F7375626C696D655F74657874002F7661722F7777772F68746D6C2F696E6465782E68746D6C
+type=PATH msg=audit(1552058793.892:107): item=0 name="/var/www/html/index.html" inode=3003 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552058793.892:107): cwd="/"
+type=SYSCALL msg=audit(1552058793.892:107): arch=c000003e syscall=257 success=yes exit=17 a0=ffffff9c a1=1e64ce8 a2=0 a3=0 items=1 ppid=1 pid=23394 auid=1000 uid=1000 gid=1001 euid=1000 suid=1000 fsuid=1000 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=3 comm="file_read_threa" exe="/opt/sublime_text/sublime_text" subj==unconfined key=(null)
+----
+time->Fri Mar  8 15:26:40 2019
+type=PROCTITLE msg=audit(1552058800.988:108): proctitle=2F6F70742F7375626C696D655F746578742F7375626C696D655F74657874002F7661722F7777772F68746D6C2F696E6465782E68746D6C
+type=PATH msg=audit(1552058800.988:108): item=1 name="/var/www/html/index.html" inode=3003 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552058800.988:108): item=0 name="/var/www/html/" inode=12404 dev=08:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552058800.988:108): cwd="/"
+type=SYSCALL msg=audit(1552058800.988:108): arch=c000003e syscall=257 success=no exit=-13 a0=ffffff9c a1=1e64ce8 a2=241 a3=1b6 items=2 ppid=1 pid=23394 auid=1000 uid=1000 gid=1001 euid=1000 suid=1000 fsuid=1000 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=3 comm="sublime_text" exe="/opt/sublime_text/sublime_text" subj==unconfined key=(null)
+----
+time->Fri Mar  8 15:26:50 2019
+type=PROCTITLE msg=audit(1552058810.576:113): proctitle=2F62696E2F6370002F746D702F2E7375626C3363362E746D70002F7661722F7777772F68746D6C2F696E6465782E68746D6C
+type=PATH msg=audit(1552058810.576:113): item=0 name="/var/www/html/index.html" inode=3003 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552058810.576:113): cwd="/root"
+type=SYSCALL msg=audit(1552058810.576:113): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=7ffc3153de42 a2=201 a3=0 items=1 ppid=23394 pid=23418 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Fri Mar  8 15:26:48 2019
+type=PROCTITLE msg=audit(1552058808.916:109): proctitle=2F6F70742F7375626C696D655F746578742F7375626C696D655F74657874002F7661722F7777772F68746D6C2F696E6465782E68746D6C
+type=PATH msg=audit(1552058808.916:109): item=1 name="/var/www/html/index.html" inode=3003 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552058808.916:109): item=0 name="/var/www/html/" inode=12404 dev=08:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552058808.916:109): cwd="/"
+type=SYSCALL msg=audit(1552058808.916:109): arch=c000003e syscall=257 success=no exit=-13 a0=ffffff9c a1=1e64ce8 a2=241 a3=1b6 items=2 ppid=1 pid=23394 auid=1000 uid=1000 gid=1001 euid=1000 suid=1000 fsuid=1000 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=3 comm="sublime_text" exe="/opt/sublime_text/sublime_text" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:317): proctitle="-bash"
+type=PATH msg=audit(1552491240.404:317): item=0 name="/var/www/html/live/" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:317): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:317): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=564c60d11a40 a2=90800 a3=0 items=1 ppid=3228 pid=3229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="bash" exe="/bin/bash" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:318): proctitle=726D002D72002F7661722F7777772F68746D6C2F6C6976652F67756C7066696C652E6A73002F7661722F7777772F68746D6C2F6C6976652F696E6465782E68746D6C002F7661722F7777772F68746D6C2F6C6976652F4C4943454E5345002F7661722F7777772F68746D6C2F6C6976652F7061636B6167652E6A736F6E002F76
+type=PATH msg=audit(1552491240.404:318): item=1 name="/var/www/html/live/gulpfile.js" inode=14862 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491240.404:318): item=0 name="/var/www/html/live/" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:318): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:318): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=55fe02351490 a2=0 a3=100 items=2 ppid=3229 pid=4220 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="rm" exe="/bin/rm" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:319): proctitle=726D002D72002F7661722F7777772F68746D6C2F6C6976652F67756C7066696C652E6A73002F7661722F7777772F68746D6C2F6C6976652F696E6465782E68746D6C002F7661722F7777772F68746D6C2F6C6976652F4C4943454E5345002F7661722F7777772F68746D6C2F6C6976652F7061636B6167652E6A736F6E002F76
+type=PATH msg=audit(1552491240.404:319): item=1 name="/var/www/html/live/index.html" inode=14871 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491240.404:319): item=0 name="/var/www/html/live/" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:319): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:319): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=55fe02351490 a2=0 a3=100 items=2 ppid=3229 pid=4220 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="rm" exe="/bin/rm" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:320): proctitle=726D002D72002F7661722F7777772F68746D6C2F6C6976652F67756C7066696C652E6A73002F7661722F7777772F68746D6C2F6C6976652F696E6465782E68746D6C002F7661722F7777772F68746D6C2F6C6976652F4C4943454E5345002F7661722F7777772F68746D6C2F6C6976652F7061636B6167652E6A736F6E002F76
+type=PATH msg=audit(1552491240.404:320): item=1 name="/var/www/html/live/LICENSE" inode=14860 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491240.404:320): item=0 name="/var/www/html/live/" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:320): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:320): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=55fe02351490 a2=0 a3=100 items=2 ppid=3229 pid=4220 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="rm" exe="/bin/rm" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:321): proctitle=726D002D72002F7661722F7777772F68746D6C2F6C6976652F67756C7066696C652E6A73002F7661722F7777772F68746D6C2F6C6976652F696E6465782E68746D6C002F7661722F7777772F68746D6C2F6C6976652F4C4943454E5345002F7661722F7777772F68746D6C2F6C6976652F7061636B6167652E6A736F6E002F76
+type=PATH msg=audit(1552491240.404:321): item=1 name="/var/www/html/live/package.json" inode=14876 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491240.404:321): item=0 name="/var/www/html/live/" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:321): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:321): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=55fe02351490 a2=0 a3=100 items=2 ppid=3229 pid=4220 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="rm" exe="/bin/rm" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:322): proctitle=726D002D72002F7661722F7777772F68746D6C2F6C6976652F67756C7066696C652E6A73002F7661722F7777772F68746D6C2F6C6976652F696E6465782E68746D6C002F7661722F7777772F68746D6C2F6C6976652F4C4943454E5345002F7661722F7777772F68746D6C2F6C6976652F7061636B6167652E6A736F6E002F76
+type=PATH msg=audit(1552491240.404:322): item=1 name="/var/www/html/live/package-lock.json" inode=14875 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491240.404:322): item=0 name="/var/www/html/live/" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:322): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:322): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=55fe02351490 a2=0 a3=100 items=2 ppid=3229 pid=4220 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="rm" exe="/bin/rm" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:323): proctitle=726D002D72002F7661722F7777772F68746D6C2F6C6976652F67756C7066696C652E6A73002F7661722F7777772F68746D6C2F6C6976652F696E6465782E68746D6C002F7661722F7777772F68746D6C2F6C6976652F4C4943454E5345002F7661722F7777772F68746D6C2F6C6976652F7061636B6167652E6A736F6E002F76
+type=PATH msg=audit(1552491240.404:323): item=1 name="/var/www/html/live/README.md" inode=14861 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491240.404:323): item=0 name="/var/www/html/live/" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:323): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:323): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=55fe02351490 a2=0 a3=100 items=2 ppid=3229 pid=4220 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="rm" exe="/bin/rm" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:324): proctitle=726D002D72002F7661722F7777772F68746D6C2F6C6976652F67756C7066696C652E6A73002F7661722F7777772F68746D6C2F6C6976652F696E6465782E68746D6C002F7661722F7777772F68746D6C2F6C6976652F4C4943454E5345002F7661722F7777772F68746D6C2F6C6976652F7061636B6167652E6A736F6E002F76
+type=PATH msg=audit(1552491240.404:324): item=0 name="/var/www/html/live/vendor" inode=14882 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:324): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:324): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55fe02351490 a2=30900 a3=0 items=1 ppid=3229 pid=4220 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="rm" exe="/bin/rm" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:325): proctitle=726D002D72002F7661722F7777772F68746D6C2F6C6976652F67756C7066696C652E6A73002F7661722F7777772F68746D6C2F6C6976652F696E6465782E68746D6C002F7661722F7777772F68746D6C2F6C6976652F4C4943454E5345002F7661722F7777772F68746D6C2F6C6976652F7061636B6167652E6A736F6E002F76
+type=PATH msg=audit(1552491240.404:325): item=0 name="/var/www/html/live/vendor" inode=14882 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:325): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:325): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55fe02351490 a2=b0900 a3=0 items=1 ppid=3229 pid=4220 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="rm" exe="/bin/rm" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:00 2019
+type=PROCTITLE msg=audit(1552491240.404:356): proctitle=726D002D72002F7661722F7777772F68746D6C2F6C6976652F67756C7066696C652E6A73002F7661722F7777772F68746D6C2F6C6976652F696E6465782E68746D6C002F7661722F7777772F68746D6C2F6C6976652F4C4943454E5345002F7661722F7777772F68746D6C2F6C6976652F7061636B6167652E6A736F6E002F76
+type=PATH msg=audit(1552491240.404:356): item=1 name="/var/www/html/live/vendor" inode=14882 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491240.404:356): item=0 name="/var/www/html/live/" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491240.404:356): cwd="/"
+type=SYSCALL msg=audit(1552491240.404:356): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=55fe02351490 a2=200 a3=0 items=2 ppid=3229 pid=4220 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="rm" exe="/bin/rm" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.121:362): proctitle="./backupDaemon"
+type=PATH msg=audit(1552491256.121:362): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.121:362): cwd="/"
+type=SYSCALL msg=audit(1552491256.121:362): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55b600c2558a a2=90800 a3=0 items=1 ppid=4222 pid=4223 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="backupDaemon" exe=2F686F6D652F6D61726B622F446F63756D656E74732F53797374656D7320536F6674776172652F41737369676E6D656E7420312F6261636B75704461656D6F6E subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.125:363): proctitle="./backupDaemon"
+type=PATH msg=audit(1552491256.125:363): item=0 name="/var/www/html/live" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.125:363): cwd="/"
+type=SYSCALL msg=audit(1552491256.125:363): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=55b600c255a1 a2=90800 a3=0 items=1 ppid=4222 pid=4223 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="backupDaemon" exe=2F686F6D652F6D61726B622F446F63756D656E74732F53797374656D7320536F6674776172652F41737369676E6D656E7420312F6261636B75704461656D6F6E subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.125:364): proctitle="./backupDaemon"
+type=PATH msg=audit(1552491256.125:364): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.125:364): cwd="/"
+type=SYSCALL msg=audit(1552491256.125:364): arch=c000003e syscall=90 success=yes exit=0 a0=55b600c2558a a1=0 a2=0 a3=7f03c23acae0 items=1 ppid=4222 pid=4223 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="backupDaemon" exe=2F686F6D652F6D61726B622F446F63756D656E74732F53797374656D7320536F6674776172652F41737369676E6D656E7420312F6261636B75704461656D6F6E subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.125:365): proctitle="./backupDaemon"
+type=PATH msg=audit(1552491256.125:365): item=0 name="/var/www/html/live" inode=12460 dev=08:01 mode=040444 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.125:365): cwd="/"
+type=SYSCALL msg=audit(1552491256.125:365): arch=c000003e syscall=90 success=yes exit=0 a0=55b600c255a1 a1=0 a2=0 a3=7f03c23acae0 items=1 ppid=4222 pid=4223 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="backupDaemon" exe=2F686F6D652F6D61726B622F446F63756D656E74732F53797374656D7320536F6674776172652F41737369676E6D656E7420312F6261636B75704461656D6F6E subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.133:366): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.133:366): item=0 name="/var/www/html/intranet/." inode=6540 dev=08:01 mode=040000 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.133:366): cwd="/"
+type=SYSCALL msg=audit(1552491256.133:366): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7ffe9a2ff7b2 a2=90800 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:367): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:367): item=0 name="/var/www/html/intranet/./LICENSE" inode=12813 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:367): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:367): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d1340 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:368): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:368): item=1 name="/var/www/html/live/./LICENSE" inode=14860 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.137:368): item=0 name="/var/www/html/live/./" inode=12460 dev=08:01 mode=040000 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:368): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:368): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d1370 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:369): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:369): item=0 name="/var/www/html/intranet/./README.md" inode=13474 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:369): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:369): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d1340 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:370): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:370): item=1 name="/var/www/html/live/./README.md" inode=14861 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.137:370): item=0 name="/var/www/html/live/./" inode=12460 dev=08:01 mode=040000 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:370): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:370): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d1370 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:371): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:371): item=0 name="/var/www/html/intranet/./gulpfile.js" inode=13524 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:371): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:371): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d1340 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:372): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:372): item=1 name="/var/www/html/live/./gulpfile.js" inode=14862 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.137:372): item=0 name="/var/www/html/live/./" inode=12460 dev=08:01 mode=040000 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:372): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:372): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d1370 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:373): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:373): item=0 name="/var/www/html/intranet/./index.html" inode=13525 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:373): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:373): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d1340 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:374): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:374): item=1 name="/var/www/html/live/./index.html" inode=14871 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.137:374): item=0 name="/var/www/html/live/./" inode=12460 dev=08:01 mode=040000 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:374): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:374): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d1370 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:375): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:375): item=0 name="/var/www/html/intranet/./package-lock.json" inode=13643 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:375): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:375): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2470 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:376): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:376): item=1 name="/var/www/html/live/./package-lock.json" inode=14875 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.137:376): item=0 name="/var/www/html/live/./" inode=12460 dev=08:01 mode=040000 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:376): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:376): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d1340 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:377): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:377): item=0 name="/var/www/html/intranet/./package.json" inode=13645 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:377): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:377): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d1340 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:378): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:378): item=1 name="/var/www/html/live/./package.json" inode=14876 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.137:378): item=0 name="/var/www/html/live/./" inode=12460 dev=08:01 mode=040000 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:378): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:378): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d1430 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:379): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:379): item=1 name="/var/www/html/live/./vendor" inode=14882 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.137:379): item=0 name="/var/www/html/live/./" inode=12460 dev=08:01 mode=040000 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:379): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:379): arch=c000003e syscall=83 success=yes exit=0 a0=5593537d1430 a1=1c0 a2=3554 a3=7ffe9a2fd8c8 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:380): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:380): item=0 name="/var/www/html/intranet/./vendor" inode=13652 dev=08:01 mode=040700 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:380): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:380): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d1340 a2=90800 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:381): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:381): item=1 name="/var/www/html/live/./vendor/bootstrap" inode=14883 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.137:381): item=0 name="/var/www/html/live/./vendor/" inode=14882 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:381): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:381): arch=c000003e syscall=83 success=yes exit=0 a0=5593537d24f0 a1=1c0 a2=3559 a3=7ffe9a2fd670 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.137:382): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.137:382): item=0 name="/var/www/html/intranet/./vendor/bootstrap" inode=13657 dev=08:01 mode=040700 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.137:382): cwd="/"
+type=SYSCALL msg=audit(1552491256.137:382): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2470 a2=90800 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:383): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:383): item=1 name="/var/www/html/live/./vendor/bootstrap/css" inode=14884 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.141:383): item=0 name="/var/www/html/live/./vendor/bootstrap/" inode=14883 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:383): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:383): arch=c000003e syscall=83 success=yes exit=0 a0=5593537d2560 a1=1c0 a2=3561 a3=0 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:384): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:384): item=0 name="/var/www/html/intranet/./vendor/bootstrap/css" inode=13665 dev=08:01 mode=040700 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:384): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:384): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2520 a2=90800 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:385): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:385): item=0 name="/var/www/html/intranet/./vendor/bootstrap/css/bootstrap.css" inode=13666 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:385): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:385): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:386): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:386): item=1 name="/var/www/html/live/./vendor/bootstrap/css/bootstrap.css" inode=14885 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.141:386): item=0 name="/var/www/html/live/./vendor/bootstrap/css/" inode=14884 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:386): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:386): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d2650 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:387): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:387): item=0 name="/var/www/html/intranet/./vendor/bootstrap/css/bootstrap.css.map" inode=13686 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:387): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:387): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:388): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:388): item=1 name="/var/www/html/live/./vendor/bootstrap/css/bootstrap.css.map" inode=14886 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.141:388): item=0 name="/var/www/html/live/./vendor/bootstrap/css/" inode=14884 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:388): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:388): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d26e0 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:389): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:389): item=0 name="/var/www/html/intranet/./vendor/bootstrap/css/bootstrap.min.css" inode=13689 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:389): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:389): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:390): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:390): item=1 name="/var/www/html/live/./vendor/bootstrap/css/bootstrap.min.css" inode=14887 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.141:390): item=0 name="/var/www/html/live/./vendor/bootstrap/css/" inode=14884 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:390): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:390): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d26e0 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:391): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:391): item=0 name="/var/www/html/intranet/./vendor/bootstrap/css/bootstrap.min.css.map" inode=13693 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:391): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:391): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:392): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:392): item=1 name="/var/www/html/live/./vendor/bootstrap/css/bootstrap.min.css.map" inode=14888 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.141:392): item=0 name="/var/www/html/live/./vendor/bootstrap/css/" inode=14884 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:392): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:392): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d26e0 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:393): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:393): item=1 name="/var/www/html/live/./vendor/bootstrap/js" inode=14889 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.141:393): item=0 name="/var/www/html/live/./vendor/bootstrap/" inode=14883 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:393): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:393): arch=c000003e syscall=83 success=yes exit=0 a0=5593537d2560 a1=1c0 a2=35ba a3=7ffe9a2fcc68 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:394): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:394): item=0 name="/var/www/html/intranet/./vendor/bootstrap/js" inode=13754 dev=08:01 mode=040700 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:394): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:394): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2520 a2=90800 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:395): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:395): item=0 name="/var/www/html/intranet/./vendor/bootstrap/js/bootstrap.bundle.js" inode=13755 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:395): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:395): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:396): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:396): item=1 name="/var/www/html/live/./vendor/bootstrap/js/bootstrap.bundle.js" inode=14890 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.141:396): item=0 name="/var/www/html/live/./vendor/bootstrap/js/" inode=14889 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:396): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:396): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d26e0 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:397): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:397): item=0 name="/var/www/html/intranet/./vendor/bootstrap/js/bootstrap.bundle.js.map" inode=13756 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:397): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:397): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.141:398): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.141:398): item=1 name="/var/www/html/live/./vendor/bootstrap/js/bootstrap.bundle.js.map" inode=14891 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.141:398): item=0 name="/var/www/html/live/./vendor/bootstrap/js/" inode=14889 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.141:398): cwd="/"
+type=SYSCALL msg=audit(1552491256.141:398): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d26e0 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.149:399): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.149:399): item=0 name="/var/www/html/intranet/./vendor/bootstrap/js/bootstrap.bundle.min.js" inode=13763 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.149:399): cwd="/"
+type=SYSCALL msg=audit(1552491256.149:399): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.149:400): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.149:400): item=1 name="/var/www/html/live/./vendor/bootstrap/js/bootstrap.bundle.min.js" inode=14892 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.149:400): item=0 name="/var/www/html/live/./vendor/bootstrap/js/" inode=14889 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.149:400): cwd="/"
+type=SYSCALL msg=audit(1552491256.149:400): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d26e0 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.149:401): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.149:401): item=0 name="/var/www/html/intranet/./vendor/bootstrap/js/bootstrap.bundle.min.js.map" inode=13774 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.149:401): cwd="/"
+type=SYSCALL msg=audit(1552491256.149:401): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d25a0 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.149:402): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.149:402): item=1 name="/var/www/html/live/./vendor/bootstrap/js/bootstrap.bundle.min.js.map" inode=14893 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.149:402): item=0 name="/var/www/html/live/./vendor/bootstrap/js/" inode=14889 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.149:402): cwd="/"
+type=SYSCALL msg=audit(1552491256.149:402): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d2600 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.149:403): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.149:403): item=0 name="/var/www/html/intranet/./vendor/bootstrap/js/bootstrap.js" inode=13775 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.149:403): cwd="/"
+type=SYSCALL msg=audit(1552491256.149:403): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.149:404): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.149:404): item=1 name="/var/www/html/live/./vendor/bootstrap/js/bootstrap.js" inode=14894 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.149:404): item=0 name="/var/www/html/live/./vendor/bootstrap/js/" inode=14889 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.149:404): cwd="/"
+type=SYSCALL msg=audit(1552491256.149:404): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d2650 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.149:405): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.149:405): item=0 name="/var/www/html/intranet/./vendor/bootstrap/js/bootstrap.js.map" inode=13776 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.149:405): cwd="/"
+type=SYSCALL msg=audit(1552491256.149:405): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.149:406): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.149:406): item=1 name="/var/www/html/live/./vendor/bootstrap/js/bootstrap.js.map" inode=14895 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.149:406): item=0 name="/var/www/html/live/./vendor/bootstrap/js/" inode=14889 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.149:406): cwd="/"
+type=SYSCALL msg=audit(1552491256.149:406): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d26e0 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.149:407): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.149:407): item=0 name="/var/www/html/intranet/./vendor/bootstrap/js/bootstrap.min.js" inode=13777 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.149:407): cwd="/"
+type=SYSCALL msg=audit(1552491256.149:407): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:408): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:408): item=1 name="/var/www/html/live/./vendor/bootstrap/js/bootstrap.min.js" inode=14896 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.153:408): item=0 name="/var/www/html/live/./vendor/bootstrap/js/" inode=14889 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:408): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:408): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d26e0 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:409): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:409): item=0 name="/var/www/html/intranet/./vendor/bootstrap/js/bootstrap.min.js.map" inode=13846 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:409): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:409): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:410): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:410): item=1 name="/var/www/html/live/./vendor/bootstrap/js/bootstrap.min.js.map" inode=14897 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.153:410): item=0 name="/var/www/html/live/./vendor/bootstrap/js/" inode=14889 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:410): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:410): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d26e0 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:411): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:411): item=1 name="/var/www/html/live/./vendor/jquery" inode=14898 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.153:411): item=0 name="/var/www/html/live/./vendor/" inode=14882 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:411): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:411): arch=c000003e syscall=83 success=yes exit=0 a0=5593537d2790 a1=1c0 a2=3617 a3=7ffe9a2fcc68 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:412): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:412): item=0 name="/var/www/html/intranet/./vendor/jquery" inode=13847 dev=08:01 mode=040700 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:412): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:412): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d24f0 a2=90800 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:413): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:413): item=0 name="/var/www/html/intranet/./vendor/jquery/jquery.js" inode=13849 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:413): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:413): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2470 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:414): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:414): item=1 name="/var/www/html/live/./vendor/jquery/jquery.js" inode=14900 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.153:414): item=0 name="/var/www/html/live/./vendor/jquery/" inode=14898 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:414): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:414): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d2520 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:415): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:415): item=0 name="/var/www/html/intranet/./vendor/jquery/jquery.min.js" inode=13853 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:415): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:415): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2470 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:416): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:416): item=1 name="/var/www/html/live/./vendor/jquery/jquery.min.js" inode=14901 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.153:416): item=0 name="/var/www/html/live/./vendor/jquery/" inode=14898 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:416): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:416): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d2520 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:417): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:417): item=0 name="/var/www/html/intranet/./vendor/jquery/jquery.min.map" inode=13855 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:417): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:417): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2470 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:418): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:418): item=1 name="/var/www/html/live/./vendor/jquery/jquery.min.map" inode=14902 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.153:418): item=0 name="/var/www/html/live/./vendor/jquery/" inode=14898 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:418): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:418): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d2520 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:419): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:419): item=0 name="/var/www/html/intranet/./vendor/jquery/jquery.slim.js" inode=13892 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:419): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:419): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2470 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:420): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:420): item=1 name="/var/www/html/live/./vendor/jquery/jquery.slim.js" inode=14903 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.153:420): item=0 name="/var/www/html/live/./vendor/jquery/" inode=14898 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:420): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:420): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d2520 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:421): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:421): item=0 name="/var/www/html/intranet/./vendor/jquery/jquery.slim.min.js" inode=13985 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:421): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:421): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:422): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:422): item=1 name="/var/www/html/live/./vendor/jquery/jquery.slim.min.js" inode=14904 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.153:422): item=0 name="/var/www/html/live/./vendor/jquery/" inode=14898 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:422): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:422): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d2470 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:423): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:423): item=0 name="/var/www/html/intranet/./vendor/jquery/jquery.slim.min.map" inode=14001 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:423): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:423): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5593537d2600 a2=20000 a3=0 items=1 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.153:424): proctitle=6370002D75002D72002D76002F7661722F7777772F68746D6C2F696E7472616E65742F2E002F7661722F7777772F68746D6C2F6C697665
+type=PATH msg=audit(1552491256.153:424): item=1 name="/var/www/html/live/./vendor/jquery/jquery.slim.min.map" inode=14905 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552491256.153:424): item=0 name="/var/www/html/live/./vendor/jquery/" inode=14898 dev=08:01 mode=040700 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.153:424): cwd="/"
+type=SYSCALL msg=audit(1552491256.153:424): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=5593537d2470 a2=c1 a3=1b4 items=2 ppid=4228 pid=4229 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="cp" exe="/bin/cp" subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.161:425): proctitle="./backupDaemon"
+type=PATH msg=audit(1552491256.161:425): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040000 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.161:425): cwd="/"
+type=SYSCALL msg=audit(1552491256.161:425): arch=c000003e syscall=90 success=yes exit=0 a0=55b600c2558a a1=124 a2=124 a3=7f03c23acae0 items=1 ppid=4222 pid=4223 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="backupDaemon" exe=2F686F6D652F6D61726B622F446F63756D656E74732F53797374656D7320536F6674776172652F41737369676E6D656E7420312F6261636B75704461656D6F6E subj==unconfined key=(null)
+----
+time->Wed Mar 13 15:34:16 2019
+type=PROCTITLE msg=audit(1552491256.161:426): proctitle="./backupDaemon"
+type=PATH msg=audit(1552491256.161:426): item=0 name="/var/www/html/live" inode=12460 dev=08:01 mode=040000 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552491256.161:426): cwd="/"
+type=SYSCALL msg=audit(1552491256.161:426): arch=c000003e syscall=90 success=yes exit=0 a0=55b600c255a1 a1=124 a2=124 a3=7f03c23acae0 items=1 ppid=4222 pid=4223 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=3 comm="backupDaemon" exe=2F686F6D652F6D61726B622F446F63756D656E74732F53797374656D7320536F6674776172652F41737369676E6D656E7420312F6261636B75704461656D6F6E subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:01 2019
+type=PROCTITLE msg=audit(1552494121.984:458): proctitle=6C73002D2D636F6C6F723D6175746F
+type=PATH msg=audit(1552494121.984:458): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494121.984:458): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494121.984:458): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=56552be754a0 a2=90800 a3=0 items=1 ppid=3229 pid=4540 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="ls" exe="/bin/ls" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.464:459): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.464:459): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.464:459): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.464:459): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.464:460): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.464:460): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.464:460): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.464:460): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.464:461): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.464:461): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.464:461): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.464:461): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.464:462): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.464:462): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.464:462): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.464:462): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.464:463): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.464:463): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.464:463): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.464:463): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.468:464): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.468:464): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.468:464): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.468:464): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.472:465): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.472:465): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.472:465): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.472:465): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.472:466): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.472:466): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.472:466): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.472:466): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.472:467): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.472:467): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.472:467): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.472:467): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.472:468): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.472:468): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.472:468): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.472:468): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.476:469): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.476:469): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.476:469): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.476:469): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:470): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:470): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:470): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:470): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:471): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:471): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:471): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:471): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:472): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:472): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:472): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:472): arch=c000003e syscall=257 success=yes exit=6 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:473): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:473): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:473): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:473): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:474): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:474): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:474): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:474): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:475): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:475): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:475): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:475): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:476): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:476): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:476): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:476): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:477): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:477): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:477): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:477): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:478): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:478): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:478): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:478): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:479): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:479): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:479): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:479): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:480): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:480): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:480): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:480): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:481): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:481): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:481): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:481): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.484:482): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.484:482): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.484:482): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.484:482): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:483): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:483): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:483): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:483): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:484): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:484): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:484): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:484): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:485): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:485): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:485): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:485): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:486): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:486): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:486): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:486): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:487): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:487): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:487): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:487): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:488): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:488): item=0 name="index.html" inode=13525 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:488): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:488): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a346065160 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:489): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:489): item=0 name="index.html" inode=13525 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:489): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:489): arch=c000003e syscall=89 success=no exit=-22 a0=7ffc536ef420 a1=7ffc536f0470 a2=fff a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:490): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:490): item=1 name=".index.html.swp" inode=14911 dev=08:01 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494126.496:490): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:490): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:490): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=55a34627bf90 a2=c2 a3=180 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:491): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:491): item=1 name=".index.html.swx" inode=14913 dev=08:01 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494126.496:491): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:491): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:491): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a346065cd0 a2=c2 a3=180 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:492): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:492): item=1 name=".index.html.swx" inode=14913 dev=08:01 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494126.496:492): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:492): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:492): arch=c000003e syscall=87 success=yes exit=0 a0=55a346065cd0 a1=7ffc536f1590 a2=0 a3=180 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.496:493): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.496:493): item=1 name=".index.html.swp" inode=14911 dev=08:01 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494126.496:493): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.496:493): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.496:493): arch=c000003e syscall=87 success=yes exit=0 a0=55a34627bf90 a1=7ffc536f1590 a2=0 a3=180 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.504:494): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.504:494): item=1 name=".index.html.swp" inode=14911 dev=08:01 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494126.504:494): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.504:494): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.504:494): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=55a34627bf90 a2=200c2 a3=180 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.504:495): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.504:495): item=0 name=".index.html.swp" inode=14911 dev=08:01 mode=0100600 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.504:495): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.504:495): arch=c000003e syscall=90 success=yes exit=0 a0=55a34627bf90 a1=1a4 a2=7ffc536f1820 a3=7ffc536f18a0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.504:496): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.504:496): item=0 name="index.html" inode=13525 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.504:496): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.504:496): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a346065160 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.504:497): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.504:497): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.504:497): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.504:497): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.504:498): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.504:498): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.504:498): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.504:498): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.508:499): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.508:499): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.508:499): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.508:499): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.508:500): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.508:500): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.508:500): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.508:500): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.512:501): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.512:501): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.512:501): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.512:501): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.528:502): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.528:502): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.528:502): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.528:502): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.536:503): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.536:503): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.536:503): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.536:503): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.536:504): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.536:504): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.536:504): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.536:504): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:06 2019
+type=PROCTITLE msg=audit(1552494126.536:505): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494126.536:505): item=0 name="." inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494126.536:505): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494126.536:505): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a344d7ea41 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.216:507): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.216:507): item=1 name="4913" inode=14913 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494133.216:507): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.216:507): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.216:507): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a34605b510 a2=200c1 a3=81b4 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.216:509): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.216:509): item=1 name="4913" inode=14913 dev=08:01 mode=0100644 ouid=1000 ogid=1001 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494133.216:509): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.216:509): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.216:509): arch=c000003e syscall=87 success=yes exit=0 a0=55a34605b510 a1=7ffc536f1120 a2=7ffc536f1120 a3=81b4 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.216:510): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.216:510): item=0 name="index.html" inode=13525 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.216:510): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.216:510): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a346065160 a2=0 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.216:511): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.216:511): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.216:511): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.216:511): arch=c000003e syscall=87 success=no exit=-2 a0=55a34628dec0 a1=0 a2=55a346387b90 a3=0 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.216:512): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.216:512): item=1 name="index.html~" inode=14913 dev=08:01 mode=0100664 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494133.216:512): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.216:512): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.216:512): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=55a34628dec0 a2=200c1 a3=1b4 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.216:514): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.216:514): item=0 name="index.html~" inode=14913 dev=08:01 mode=0100664 ouid=0 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.216:514): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.216:514): arch=c000003e syscall=188 success=yes exit=0 a0=55a34628dec0 a1=7fc6fb71bb5f a2=55a346383830 a3=1c items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.216:515): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.216:515): item=1 name="index.html" inode=13525 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494133.216:515): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.216:515): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.216:515): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55a346065160 a2=41 a3=1b4 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.220:517): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.220:517): item=1 name="index.html~" inode=14913 dev=08:01 mode=0100664 ouid=0 ogid=1001 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494133.220:517): item=0 name="/var/www/html/intranet" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.220:517): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.220:517): arch=c000003e syscall=87 success=yes exit=0 a0=55a34628dec0 a1=55a34609fa40 a2=55a344d8c1dc a3=0 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.324:518): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.324:518): item=1 name="/var/www/html/intranet/.index.html.swp" inode=14911 dev=08:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=PATH msg=audit(1552494133.324:518): item=0 name="/var/www/html/intranet/" inode=6540 dev=08:01 mode=040444 ouid=1000 ogid=1001 rdev=00:00 nametype=PARENT cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.324:518): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.324:518): arch=c000003e syscall=87 success=yes exit=0 a0=55a34627bfd0 a1=1 a2=1 a3=7ffc536f11f0 items=2 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)
+----
+time->Wed Mar 13 16:22:13 2019
+type=PROCTITLE msg=audit(1552494133.216:506): proctitle=76696D00696E6465782E68746D6C
+type=PATH msg=audit(1552494133.216:506): item=0 name="index.html" inode=13525 dev=08:01 mode=0100664 ouid=1000 ogid=1001 rdev=00:00 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+type=CWD msg=audit(1552494133.216:506): cwd="/var/www/html/intranet"
+type=SYSCALL msg=audit(1552494133.216:506): arch=c000003e syscall=191 success=no exit=-61 a0=55a346065160 a1=7fc6fb71bb5f a2=7ffc536f0d60 a3=84 items=1 ppid=3229 pid=4542 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=3 comm="vim" exe="/usr/bin/vim.basic" subj==unconfined key=(null)

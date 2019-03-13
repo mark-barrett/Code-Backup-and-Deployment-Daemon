@@ -9,6 +9,7 @@
 #include "backup.h"
 #include "logger.h"
 #include "update.h"
+#include "audit_log.h"
 
 int main() {
 	
@@ -21,7 +22,10 @@ int main() {
 	// recordLog("Hello World");
 	
 	// For updating
-	printf("Updating live site\n");
-	performUpdate();
+	//printf("Updating live site\n");
+	//performUpdate();
+	
+	// Testing getting audit files
+	generateAuditLogs();	
 	return 0;
 }

@@ -6,12 +6,16 @@
  * Git Repo: https://github.com/mark-barrett/Code-Backup-and-Deployment-Daemon
  */
 #include <stdio.h>
+#include <stdlib.h>
 #include "backup.h"
 #include "logger.h"
 #include "update.h"
 #include "audit_log.h"
 
 int main() {
+
+	// Put a watch on the /var/www/html directory
+	system("auditctl -w /var/www/html -p rwxa");
 	
 	// We know backup works so we can comment this out for the minute
 	// printf("Starting a backup\n");

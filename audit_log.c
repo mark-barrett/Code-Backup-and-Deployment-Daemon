@@ -10,7 +10,7 @@
 #include <string.h>
 #include "logger.h"
 
-int generateAuditLogs() {
+int generateAuditLogs(char update_log_file_path[100]) {
 
 	// Get to the root directory
 	if(chdir("/") < 0) {
@@ -25,11 +25,19 @@ int generateAuditLogs() {
 	// Because we don't need all of the data and it can look really awful, we can use
 	// awk to clean things up a bit and then carry on parsing the resulting information.
 	// Can specify a time if needed in the future
+	recordLog("Audit Log: Getting file changes by user");
+
 	FILE *fp;
 	fp = popen("ausearch -f /var/www/html/ | aureport -f | awk '/^[0-9]/ {printf \"%s %s %s %s %s\\n\", $2, $3, $4, $7, $8}'", "r");
 	
 	char line[256];
-	
+
+	// Open the log file that was created by the updater.
+	FILE *update_log_file = fopen(update_log_file_path, "a+");
+
+	// Put a title to seperate it
+	fputs("\n[Audit Logs for this Update]\n", update_log_file);
+
 	// Read line by line
 	while(fgets(line, sizeof(line), fp)) {
 		// We need to break this into tokens to get each element
@@ -71,11 +79,21 @@ int generateAuditLogs() {
 			counter++;
 		}
 		
-		// Print the file
-		printf("File: %s\n", file);
 		
-		// Print the program that altered it
-		printf("Exe: %s\n", exe);
+		// Print the file
+		char temp_message[200] = "File: ";
+
+		strcat(temp_message, strcat(file, "\n"));
+
+		fputs(temp_message, update_log_file);
+
+		// Clear the temp_message
+		strcpy(temp_message, "Exe: ");
+		
+		// The program
+		strcat(temp_message, strcat(exe, "\n"));
+
+		fputs(temp_message, update_log_file);
 
 		// Need to get the user using the id
 		if(strcmp(auid, "-1") != 0 || strcmp(auid, "1") != 0) {
@@ -94,16 +112,34 @@ int generateAuditLogs() {
 			char username[25] = "";
 			
 			fgets(username, sizeof(username), user_pipe);
+			
+			// Clear temp message
+			strcpy(temp_message, "User: ");
 
-			printf("User: %s\n", username);
+			// Add the user
+			strcat(temp_message, strcat(username, "\n"));
+			
+			fputs(temp_message, update_log_file);
 
 		}
-		// Print the file change
-		printf("[File Change]\nDate: %s @ %s\n", date, time);
-	
+
+		// Clear temp message
+		strcpy(temp_message, "[File Change]\nDate: ");
+
+		strcat(temp_message, date);
+
+		strcat(temp_message, " @ ");
+
+		strcat(temp_message, time);
+
+		strcat(temp_message, "\n");
+
+		fputs(temp_message, update_log_file);
+
 	}
 
 	fclose(fp);
+	fclose(update_log_file);
 
 	return 0;
 }

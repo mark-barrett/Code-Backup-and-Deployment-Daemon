@@ -12,6 +12,7 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include "logger.h"
+#include "audit_log.h"
 #include "lock_files.h"
 
 int performUpdate() {
@@ -48,7 +49,7 @@ int performUpdate() {
 		char time_as_string_and_filename[100];
 
 		strftime(time_as_string_and_filename, 100, "/var/log/backup-daemon/update-logs/%Y-%m-%d-%H:%M:%S.log ", localtime(&now));
-
+		
 		// The copy is going to use the -u flag to ensure only altered files are taken
 		// It will also use the -r command too.
 		char copy_command[200] = "cp -u -r -v > ";
@@ -74,6 +75,9 @@ int performUpdate() {
 				recordLog("Update: ERROR UPDATING SITE. Command failed :(");
 			} else {
 				char log_message[300] = "Update: Update successful, changes now live. Log of update files at: ";
+				
+				// Generate audit logs
+				generateAuditLogs(time_as_string_and_filename);
 
 				// Concat the message and the log file directory
 				strcat(log_message, time_as_string_and_filename);

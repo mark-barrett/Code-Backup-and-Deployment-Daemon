@@ -26,10 +26,10 @@ int main() {
 	// recordLog("Hello World");
 	
 	// For updating
-	//printf("Updating live site\n");
-	//performUpdate();
+	printf("Updating live site\n");
+	performUpdate();
 	
 	// Testing getting audit files
-	generateAuditLogs();	
+	//generateAuditLogs();	
 	return 0;
 }

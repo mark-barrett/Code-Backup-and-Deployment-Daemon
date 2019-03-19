@@ -46,9 +46,9 @@ int performUpdate() {
 		time_t now = time(NULL);
 
 		// Convert it to a string
-		char time_as_string_and_filename[100];
+		char time_as_string_and_filename[100] = "";
 
-		strftime(time_as_string_and_filename, 100, "/var/log/backup-daemon/update-logs/%Y-%m-%d-%H:%M:%S.log ", localtime(&now));
+		strftime(time_as_string_and_filename, 100, "/var/log/backup-daemon/update-logs/%Y-%m-%d-%H:%M:%S.log", localtime(&now));
 		
 		// The copy is going to use the -u flag to ensure only altered files are taken
 		// It will also use the -r command too.
@@ -65,7 +65,7 @@ int performUpdate() {
 
 			// Now the files are locked.
 			// We need to add the directories to the copy command
-			strcat(copy_command, "/var/www/html/intranet/. /var/www/html/live");
+			strcat(copy_command, " /var/www/html/intranet/. /var/www/html/live");
 
 			// Execute the command
 			recordLog("Update: Starting update....");
@@ -76,6 +76,7 @@ int performUpdate() {
 			} else {
 				char log_message[300] = "Update: Update successful, changes now live. Log of update files at: ";
 				
+				printf("Time and string as: %s", time_as_string_and_filename);
 				// Generate audit logs
 				generateAuditLogs(time_as_string_and_filename);
 

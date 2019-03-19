@@ -11,6 +11,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <mqueue.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include "backup.h"
 #include "logger.h"
 #include "update.h"
@@ -18,6 +20,44 @@
 
 int main() {
 
+	// Code to make this a daemon
+	int pid = fork();
+
+	// Check for an error
+	if(pid < 0) {
+		// There was an error
+		exit(EXIT_FAILURE);
+	} else if(pid > 0) {
+		// Is the parent
+		exit(EXIT_SUCCESS);
+	}
+
+	// Step 1. Create the Orphan Child - If we have gotten to here then we are the child process
+	// Done!
+	
+	// Step 2. Ekevate the orphan to the session leader.
+	if(setsid() < 0) { exit(EXIT_FAILURE); }
+
+	// Fork again to ensure that the process is not a session leader
+	pid = fork();
+	if(pid > 0) {
+		exit(EXIT_SUCCESS);
+	}
+
+	// Step 3. Call unmask
+	umask(0);
+
+	// Step 4.  Change the current working directory to root.
+	if(chdir("/") < 0) { exit(EXIT_FAILURE); }
+
+	// Step 5. Close down file descriptors.
+	int x;
+	for(x = sysconf(_SC_OPEN_MAX); x>=0; x--) {
+		close(x);
+	}
+
+	// Thats it!
+	
 	// Put a watch on the /var/www/html directory.
 	// If it is already there then don't worry.
 	system("auditctl -w /var/www/html -p rwxa");
@@ -44,21 +84,25 @@ int main() {
 	char time_as_string[50];
 	
 	do {
+		// Get the current time
 		now = time(NULL);
+
+		// Sleep for 1 second
 		sleep(1);
-
+		
+		// Convert the time to a string
 		strftime(time_as_string, 50, "%H:%M:%S", localtime(&now));
-		printf("%s\n", time_as_string);
 
-		if(strcmp(time_as_string, "11:23:00") == 0) {
+		printf("Time: %s\n", time_as_string);
+		
+		// Check to see if the time is midnight.
+		// If it is then perform the backup
+		if(strcmp(time_as_string, "14:40:00") == 0) {
 			// First perform the backup
 			performBackup();
 
 			// Then update
 			performUpdate();
-
-			// Generate the audit logs
-			generateAuditLogs();
 		}
 
 		// Try read from the message queue
@@ -67,15 +111,39 @@ int main() {
 		bytes_read = mq_receive(mq, buffer, 1024, NULL);
 		
 	       	buffer[bytes_read] = '\0';
-
+			
 		// Check if its a terminate instruction
 		if(!strncmp(buffer, "stop", strlen("stop"))) {
 			terminate = 1;
 		} else if(!strncmp(buffer, "backup", strlen("backup"))) {
-			printf("Forcing Backup\n");
+			// If we need to force the backup
+			recordLog("Forcing backup....");
+
+			// Call the backup
+			performBackup();
+
+			// Record that we have done it
+			recordLog("Backup force....");
 
 			// We have forcing backup done, now set the buffer back to empty.
 			memset(buffer, 0, 1024+1);
+		} else if(!strncmp(buffer, "update", strlen("update"))) {
+			// We want to force a transfer, but a backup is also part of this.
+			// Lets log it
+			
+			recordLog("Forcing update (includes backup)....");
+
+			// Call the backup
+			performBackup();
+			
+			// Then update
+			performUpdate();
+			
+			// Record that we have done it
+			recordLog("Updated forced....");
+
+			memset(buffer, 0, 1024+1);
+			
 		}
 	} while(!terminate);
 	

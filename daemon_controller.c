@@ -17,9 +17,10 @@ int main() {
 	mq = mq_open("/backup-daemon", O_WRONLY);
 
 	do {
-		printf("------ Backup Daemon Controller ------\n");
+		printf("------ Daemon Controller ------\n");
 		printf("Choose one of the following options:\n");
 		printf("backup: forces backup\n");
+		printf("update: forces update (includes backup)\n");
 		printf("stop: stops daemon\n");
 		printf("> ");
 		fflush(stdout);
@@ -30,7 +31,9 @@ int main() {
 			
 		// Check what the user enters for feedback
 		if(strncmp(buffer, "backup", sizeof("backup")) != 0) {
-			printf("\nForcing the daemon to backup....\n\n") ;
+			printf("\nForcing the daemon to backup....\n\n");
+		} else if(strncmp(buffer, "update", sizeof("update")) != 0) {
+			printf("\n Forcing the daemon to update....\n\n");
 		}
 
 		mq_send(mq, buffer, 1024, 0);

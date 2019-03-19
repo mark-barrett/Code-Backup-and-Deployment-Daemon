@@ -28,7 +28,7 @@ int generateAuditLogs(char update_log_file_path[100]) {
 	recordLog("Audit Log: Getting file changes by user");
 
 	FILE *fp;
-	fp = popen("ausearch -f /var/www/html/ | aureport -f | awk '/^[0-9]/ {printf \"%s %s %s %s %s\\n\", $2, $3, $4, $7, $8}'", "r");
+	fp = popen("ausearch -ts today -f /var/www/html/ | aureport -f -i | awk '/^[0-9]/ {printf \"%s %s %s %s %s\\n\", $2, $3, $4, $7, $8}'", "r");
 	
 	char line[256];
 
@@ -94,7 +94,16 @@ int generateAuditLogs(char update_log_file_path[100]) {
 		strcat(temp_message, strcat(exe, "\n"));
 
 		fputs(temp_message, update_log_file);
+		
+		/* MAYBE GO BACK AND CHANGE THIS */
+		// The user
+		strcpy(temp_message, "User: ");
 
+		strcat(temp_message, strcat(auid, "\n"));
+
+		fputs(temp_message, update_log_file);
+		
+		/*
 		// Need to get the user using the id
 		if(strcmp(auid, "-1") != 0 || strcmp(auid, "1") != 0) {
 			// Use a pipe to get the user using the id -nu command
@@ -122,6 +131,7 @@ int generateAuditLogs(char update_log_file_path[100]) {
 			fputs(temp_message, update_log_file);
 
 		}
+		*/
 
 		// Clear temp message
 		strcpy(temp_message, "[File Change]\nDate: ");

@@ -3,7 +3,7 @@ objects = main.o backup.o lock_files.o logger.o update.c audit_log.c
 headers = backup.h lock_files.h logger.h update.h audit_log.h
 
 backupDaemon: $(objects)
-	     $(CC) -o backupDaemon $(objects) -lm -lrt
+	     $(CC) -o backupDaemon $(objects) -lm -lrt -lpthread
 
 main.o: main.c $(headers)
 	$(CC) -c main.c

@@ -7,18 +7,64 @@
  */
 #include <time.h>
 #include <stdio.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <signal.h>
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <mqueue.h>
 #include <sys/stat.h>
+#include <sys/file.h>
 #include <sys/types.h>
+#include <semaphore.h>
 #include "backup.h"
 #include "logger.h"
 #include "update.h"
 #include "audit_log.h"
 
+#define SEMAPHORE_NAME "/backup-daemon-semaphore"
+
+// The signal handler
+void sig_handler(int sigNum) {
+	// For kill
+	if(sigNum == SIGTERM) {
+		recordLog("Daemon: Received kill instruction, releasing semaphore");	
+		sem_unlink(SEMAPHORE_NAME);
+		exit(1);
+	}
+}
+
 int main() {
+	
+	// We need to setup a signal handler that will handle closing the semaphore if a kill is sent
+	if(signal(SIGTERM, sig_handler) == SIG_ERR) {
+		recordLog("Daemon: Cannot add signal handler for semaphore. Stopping program");
+		return 0;
+	}
+
+	// We need to implement the singleton pattern to ensure that there is only one instance of this
+	// program running.	
+	// Let's change directory
+	if(chdir("/") < 0) { exit(EXIT_FAILURE); }
+	
+	sem_t *sem;
+	int rc;
+
+	sem = sem_open(SEMAPHORE_NAME, O_CREAT, S_IRWXU, 1);
+
+	if(sem == SEM_FAILED) {
+		printf("Failed Sem: %d\n", errno);
+	}
+
+	rc = sem_trywait(sem);
+
+	if(rc==0) {
+		printf("Lock obtained \n");
+	} else {
+		printf("Sem not obtained\n");
+		return 0;
+	}
 
 	// Code to make this a daemon
 	int pid = fork();
@@ -35,7 +81,7 @@ int main() {
 	// Step 1. Create the Orphan Child - If we have gotten to here then we are the child process
 	// Done!
 	
-	// Step 2. Ekevate the orphan to the session leader.
+	// Step 2. Eleveate the orphan to the session leader.
 	if(setsid() < 0) { exit(EXIT_FAILURE); }
 
 	// Fork again to ensure that the process is not a session leader
@@ -48,8 +94,8 @@ int main() {
 	umask(0);
 
 	// Step 4.  Change the current working directory to root.
-	if(chdir("/") < 0) { exit(EXIT_FAILURE); }
-
+	// Already done above.
+	
 	// Step 5. Close down file descriptors.
 	int x;
 	for(x = sysconf(_SC_OPEN_MAX); x>=0; x--) {
@@ -147,5 +193,8 @@ int main() {
 		}
 	} while(!terminate);
 	
+	// Unlink the semaphore
+	sem_unlink(SEMAPHORE_NAME);
+
 	return 0;
 }

@@ -16,6 +16,7 @@ int lockFiles(char folder[], char mode[]) {
 		exit(EXIT_FAILURE);
 	} else {
 		// We can access root.
+		// Let's get the original permissions
 		// Lock the files
 		int i = strtol(mode, 0, 8);
 		if(chmod(folder, i) < 0) {

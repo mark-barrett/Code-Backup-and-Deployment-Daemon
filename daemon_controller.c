@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <mqueue.h>
+#include <semaphore.h>
 
 int main() {
 	// Create the message queue
@@ -19,8 +20,9 @@ int main() {
 	do {
 		printf("------ Daemon Controller ------\n");
 		printf("Choose one of the following options:\n");
-		printf("backup: forces backup\n");
 		printf("update: forces update (includes backup)\n");
+		printf("backup: forces backup\n");
+		printf("lock: removes sem lock\n");
 		printf("stop: stops daemon\n");
 		printf("> ");
 		fflush(stdout);
@@ -28,7 +30,7 @@ int main() {
 		memset(buffer, 0, 1024);
 
 		fgets(buffer, 1024, stdin);
-			
+		
 		// Check what the user enters for feedback
 		if(strncmp(buffer, "backup", sizeof("backup")) != 0) {
 			printf("\nForcing the daemon to backup....\n\n");

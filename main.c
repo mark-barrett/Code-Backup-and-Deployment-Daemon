@@ -25,21 +25,24 @@
 
 #define SEMAPHORE_NAME "/backup-daemon-semaphore"
 
-// The signal handler
+// The signal handler to remove the lock
 void sig_handler(int sigNum) {
 	// For kill
 	if(sigNum == SIGTERM) {
-		recordLog("Daemon: Received kill instruction, releasing semaphore");	
-		sem_unlink(SEMAPHORE_NAME);
+		recordLog("Daemon: Received kill instruction, releasing lockfile.");
+		if(remove("/var/run/backup-daemon.pid") == 0) {
+			recordLog("Daemon: Lockfile unlocked");
+		}
+		
 		exit(1);
 	}
 }
 
-int main() {
-	
+int main() {	
+
 	// We need to setup a signal handler that will handle closing the semaphore if a kill is sent
 	if(signal(SIGTERM, sig_handler) == SIG_ERR) {
-		recordLog("Daemon: Cannot add signal handler for semaphore. Stopping program");
+		recordLog("Daemon: Cannot add signal handler for singleton. Stopping program");
 		return 0;
 	}
 
@@ -48,24 +51,84 @@ int main() {
 	// Let's change directory
 	if(chdir("/") < 0) { exit(EXIT_FAILURE); }
 	
+	// Try open the lock file.
+	FILE *lock_file = fopen("/var/run/backup-daemon.pid", "a+");	
+	long file_size = 0;
+
+	if(lock_file != NULL) {
+		fseek(lock_file, 0, SEEK_END);
+		file_size = ftell(lock_file);
+	}
+
+	// Check to see if its 0
+	if(file_size == 0) {
+		// No other programs running, write the pid
+		fprintf(lock_file, "%d", getpid());
+		// Close the file
+		fclose(lock_file);
+	} else {
+		// There is a program running, log and print
+		recordLog("Daemon: Cannot start daemon as an instance is already running");
+		
+		fclose(lock_file);
+
+		// Print
+		printf("Cannot start daemon as there is an instance already running\n");
+		return 0;
+	}
+
+	/*struct flock fl;
+	int fd;
+
+	fd = open("/var/run/backup-daemon.pid", O_RDWR | O_CREAT, 0600);
+
+	fl.l_start = 0;
+	fl.l_len = 0;
+	fl.l_type = F_WRLCK;
+	fl.l_whence = SEEK_SET;
+	
+	if(fcntl(fd, F_GETLK, &fl) < 0) {
+		printf("Another instance of the program is running\n");
+	}
+
+	close(fd);	
+
+	printf("%d", fl.l_type);
+	*/
+
+	/*
+	int pid_file = open("/var/run/backup-daemon.pid", O_CREAT | O_RDWR, 0666);
+
+	int rc = flock(pid_file, LOCK_EX);
+	printf("%d", rc);
+	if(rc) {
+	
+	} else {
+	
+	}
+	*/
+
+	/*
 	sem_t *sem;
 	int rc;
 
 	sem = sem_open(SEMAPHORE_NAME, O_CREAT, S_IRWXU, 1);
 
 	if(sem == SEM_FAILED) {
-		printf("Failed Sem: %d\n", errno);
+		recordLog("Daemon: Cannot create semaphore so cannot continue.");
 	}
 
 	rc = sem_trywait(sem);
 
 	if(rc==0) {
-		printf("Lock obtained \n");
+		recordLog("Daemon: Obtained singleton lock.");
 	} else {
-		printf("Sem not obtained\n");
+		recordLog("Daemon: An instance of this daemon is already runnning.");
 		return 0;
 	}
-
+	*/
+	
+	recordLog("Daemon: Creating daemon process\n");
 	// Code to make this a daemon
 	int pid = fork();
 
@@ -193,8 +256,9 @@ int main() {
 		}
 	} while(!terminate);
 	
-	// Unlink the semaphore
-	sem_unlink(SEMAPHORE_NAME);
-
+	// Unlock the file as not used by deleting it
+	if(remove("/var/run/backup-daemon.pid") == 0) {
+		recordLog("Daemon: Lockfile unlocked");
+	}
 	return 0;
 }

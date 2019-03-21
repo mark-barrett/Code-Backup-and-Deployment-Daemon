@@ -39,7 +39,6 @@ void sig_handler(int sigNum) {
 }
 
 int main() {	
-
 	// We need to setup a signal handler that will handle closing the semaphore if a kill is sent
 	if(signal(SIGTERM, sig_handler) == SIG_ERR) {
 		recordLog("Daemon: Cannot add signal handler for singleton. Stopping program");
@@ -50,7 +49,7 @@ int main() {
 	// program running.	
 	// Let's change directory
 	if(chdir("/") < 0) { exit(EXIT_FAILURE); }
-	
+
 	// Try open the lock file.
 	FILE *lock_file = fopen("/var/run/backup-daemon.pid", "a+");	
 	long file_size = 0;
@@ -204,9 +203,9 @@ int main() {
 
 		printf("Time: %s\n", time_as_string);
 		
-		// Check to see if the time is midnight.
+		// Check to see if the time is just before midnight (23:59:59)
 		// If it is then perform the backup
-		if(strcmp(time_as_string, "14:40:00") == 0) {
+		if(strcmp(time_as_string, "23:59:59") == 0) {
 			// First perform the backup
 			performBackup();
 
